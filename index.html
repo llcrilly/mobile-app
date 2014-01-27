@@ -37,23 +37,42 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body style="text-align:center; margin: 10px 20px 0 10px;">
+    <body>
 
         <!-- Add your site or application content here -->
         
-        <h1>Welcome to the San Francisco Bay Area</h1>
-        <p>Angel Island is a California State Park located in San Francisco Bay 
-        and can only be reached by boat. Recreation includes hiking, kayaking, 
-        bicycling, camping and Segways.  It provides fantastic views of San 
-        Francisco, the Bay Bridge and the Golden Gate Bridge, as well as 
-        Alcatraz and surrounding cities.</p>
+        <header style="text-align:center; margin: 0 10px 0 10px;">
+          <h1>Welcome to the San Francisco Bay Area</h1>
+        </header>
+        
+        <section style="text-align:center; margin: 5px 15px 5px 15px;">
+          <h2>Angel Island</h2>
+          <p>Angel Island, a California State Park, is the largest island in 
+          San Francisco Bay 
+          and can only be reached by boat. Recreation includes hiking, kayaking, 
+          bicycling, camping and Segways.  It provides fantastic views of San 
+          Francisco, the Bay Bridge and the Golden Gate Bridge, as well as 
+          Alcatraz and surrounding cities.</p>
        
-        <video width="320" height="240" controls poster="angelIsland.jpg">
-          <source src="angelIsland.mp4" type="video/mp4">
-          <source src="angelIsland.webm" type="video/webm">
-          <source src="angelIsland.ogv" type="video/ogg">
-          Your browser does not support the video tag.
-        </video>
+          <video width="320" height="240" controls poster="angelIsland.jpg">
+            <source src="angelIsland.mp4" type="video/mp4">
+            <source src="angelIsland.webm" type="video/webm">
+            <source src="angelIsland.ogv" type="video/ogg">
+             <track src="angelIsland.vtt" kind="subtitles" srclang="en" label="English">
+            Your browser does not support the video tag.
+          </video>
+        </section>
+        
+        <footer style="border: 2px solid black; margin: 15px 15px 15px 15px; padding: 0 10px 10px 10px;">
+          <h3>footnote:</h3>
+          <p>The video tag contains mp4, webm and ogg files for video and
+          a vtt file for a few track subtitles.  The mp4 was created with Windows 
+          Live Movie Maker.  The webm and ogg files were generated using
+          EasyHTML5Video.  If you see EasyHTML5Video watermark in top right 
+          corner, you are seeing either the webm or ogg file.  The vtt file 
+          was created using Microsoft HTML5 Video Caption Maker. Music credit - 
+          Field Day by Anthony Phillips.</p>
+        </footer>
     
 
         <script src="js/vendor/zepto.min.js"></script>
